@@ -1,0 +1,17 @@
+1.request Object
+2.representation object
+3.convertor
+4.swager
+ ...@ApiOperation(value = "Validate a token",
+            notes = "Validate a token.",
+            consumes = APPLICATION_JSON_VALUE,
+            response = Temp.class,tags = {AUTHORIZATION})
+    @PostMapping(value = "/triangle/", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
+    public Temp authorizeToken(@Valid @RequestBody @ApiParam(name = "Request payload",
+            value = "The token to validate") Temp temp) {
+        return null;
+    }
+5.handle id in post - dont need to add it - instead of this need to generate it
+6.redis/h2
+
+http://www.baeldung.com/spring-data-redis-tutorial continue from here.....
